@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+body{
+    background: rgba(255,255,255);
+    padding-top: 25vh;
+    transition: 500ms;
+}
+.container{
+    width: 35%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media screen and (max-width: 450px){
+    .container{
+        width: 80%;
+    }
+    .content{
+        font-size: 12px;
+    }
+    body{
+        padding-top: 13vh;
+    }
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header img{
+    display: block;
+    border-radius: 50%;
+    width: 20%;
+    margin-bottom: 30px;
+}
+.header img:hover{
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+    -webkit-box-shadow: -1px -2px 6px 1px rgba(0,0,0,0.44); 
+    box-shadow: -1px -2px 6px 1px rgba(0,0,0,0.44);
+}
+.header h1{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.header h2{
+    font-weight: 200;
+    color: rgb(170, 170, 170);
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.social{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+.social ul{
+    display: flex;
+    margin-bottom: 50px;
+}
+.social ul li{
+    font-size: 18px;
+}
+.social ul li a{
+    color: black;
+}
+.social ul li:not(:last-child){
+    margin-right: 12px;
+}
+.links ul{
+    display: flex;
+}
+.links ul li{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+.links ul li:first-child{
+    margin-right: 30px;
+}
+.footer{
+    margin-top: 45px;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.6em;
+    color: rgba(0, 0, 0, 0.7);
+}
+.content{
+    width: 90%;
+    height: 190px;
+    overflow: scroll;
+    margin: 40px auto 0 auto;
+    padding: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+.content p{
+    text-align: justify;
+}
+.content h2{
+    text-align: center;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bottom .dyno{
+    margin: auto;
+    width: 100%;
+}
+/* SOCIAL ICON HOVER */
+#facebook:hover{
+    color: #3b5998;
+}
+#twitter:hover{
+    color: #00acee;
+}
+#instagram:hover{
+    color: #E1306C;
+}
+#github:hover{
+    color: #24292e;
+}
+#freecodecamp:hover{
+    color: darkviolet;
+}
+#codepen:hover{
+    color: grey;
+}
+#medium:hover{
+    color: #02B875;
+}
+#mail:hover{
+    color: tomato;
+}
