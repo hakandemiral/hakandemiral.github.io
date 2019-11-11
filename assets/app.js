@@ -42,6 +42,6 @@ function addContent(event){
             document.querySelector(".dyno").appendChild(close);
         }
     }
-    xhr.open("GET", "me.json")
+    xhr.open("GET", "assets/me.json")
     xhr.send();
 }
