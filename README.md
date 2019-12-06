@@ -1,4 +1,4 @@
 # hakandemiral.github.io
-My Personel Page
+My Personal Web Page
 
 Served Github Pages <3
