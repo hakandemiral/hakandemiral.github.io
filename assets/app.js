@@ -1,5 +1,5 @@
 document.querySelector("#about-me").addEventListener("click", addContent);
-document.querySelector("#works").addEventListener("click", addContent);
+//document.querySelector("#works").addEventListener("click", addContent);
 
 function addContent(event){
     const content = document.createElement("div");
@@ -30,10 +30,10 @@ function addContent(event){
                 head.textContent = "About Me"
                 paragraph.textContent = response.aboutMe;
             }
-            else if(event.target.id == "works"){
+            /*else if(event.target.id == "works"){
                 head.textContent = "Works";
                 paragraph.innerHTML = response.works;
-            }
+            }*/
             content.className = "content";
             content.appendChild(head);
             content.appendChild(paragraph);
@@ -45,3 +45,7 @@ function addContent(event){
     xhr.open("GET", "assets/me.json")
     xhr.send();
 }
+
+//Current Year
+var date = new Date();
+document.getElementById('currentYear').innerText = date.getFullYear();
