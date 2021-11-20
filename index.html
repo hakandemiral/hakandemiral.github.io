@@ -8,7 +8,7 @@
     <meta name="description" content="I am Hakan. I work with javascript frameworks like node, react, react native.">
     <meta name="keywords" content="web, dev, developer, develope, js, javascript, html, css, react, vue, native, node, mongo, mongoose, db, database">
     <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="language" content="English">
     <meta name="revisit-after" content="30 days">
     <meta name="author" content="Hakan Demiral">
@@ -30,9 +30,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://hakandemiral.com.tr/assets/img/hakan_demiral.JPG" alt="Hakan Demiral Profile Photo">
+            <img src="https://hakandemiral.com.tr/assets/img/hakan_demiral.jpg" alt="Hakan Demiral Profile Photo">
             <h1>Hakan Demiral</h1>
-            <h2>A man burning with a love of learning</h2>
+            <h2>I don't know how to do it but I do</h2>
             <div class="social">
                 <ul>
                     <li><a id="facebook" href="https://www.facebook.com/hakandemiral95"><i class="fab fa-facebook-square"></i></a></li>
@@ -50,7 +50,7 @@
             <div class="links">
                 <ul>
                     <li id="about-me">About Me</li>
-                    <li id="works">Works</li>
+					<li id="works"><a href="https://github.com/hakandemiral">Works</a></li>
                 </ul>
             </div>
             <div class="dyno">
@@ -58,11 +58,21 @@
             </div>
          </div>
         <div class="footer">
-            Hakan Demiral © 2019
+            2015 - <span id="currentYear"></span>
             <br>
             <i class="fas fa-map-marker-alt"></i> Ankara/Turkey
         </div>
     </div>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103596469-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-103596469-2');
+</script>
+
+
     <script src="assets/app.js"></script>
 </body>
 </html>
